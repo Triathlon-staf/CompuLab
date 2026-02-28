@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Kelola Materi | Admin - COMPULAB</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/dashboard-admin.css">
+<link rel="stylesheet" href="../css/admin-kelola-materi.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="logo">COMPULAB</div>
+  <nav>
+    <a href="dashboard.html">📊 Overview</a>
+    <a href="data-user.html">👥 Kelola User</a>
+    <a href="kelola-kuis.html">📝 Kelola Kuis</a>
+    <a class="active">📚 Kelola Materi</a>
+    <a href="pengaturan.html">⚙ Pengaturan</a>
+  </nav>
+</div>
+
+<div class="main">
+
+  <div class="topbar">
+    <h1>Kelola Semua Materi 📚</h1>
+  </div>
+
+  <div class="materi-table-card">
+
+    <table>
+      <thead>
+        <tr>
+          <th>Judul</th>
+          <th>Kategori</th>
+          <th>Uploader</th>
+          <th>Tanggal</th>
+          <th>Status</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td>HTML Dasar</td>
+          <td>Web Programming</td>
+          <td>Budi (Dosen)</td>
+          <td>15 Feb 2026</td>
+          <td><span class="status active">Aktif</span></td>
+          <td>
+            <button class="view">Lihat</button>
+            <button class="delete">Hapus</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>JavaScript DOM</td>
+          <td>JavaScript</td>
+          <td>Raka (Dosen)</td>
+          <td>18 Feb 2026</td>
+          <td><span class="status inactive">Nonaktif</span></td>
+          <td>
+            <button class="view">Lihat</button>
+            <button class="delete">Hapus</button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+
+</div>
+
+</body>
+</html>
