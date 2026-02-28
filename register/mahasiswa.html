@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Registrasi Mahasiswa | COMPULAB</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/register-mahasiswa.css">
+</head>
+<body>
+
+<div class="bg-blur"></div>
+
+<div class="register-wrapper">
+
+  <div class="register-card">
+    <h2>Daftar Mahasiswa 🎓</h2>
+    <p>Buat akun untuk mulai belajar di COMPULAB</p>
+
+    <input type="text" id="nama" placeholder="Nama Lengkap">
+    <input type="text" id="npm" placeholder="NPM">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password (min 6 karakter)">
+    <input type="text" id="prodi" placeholder="Program Studi">
+    <input type="number" id="angkatan" placeholder="Angkatan">
+
+    <button onclick="registerMahasiswa()">Daftar Sekarang</button>
+
+    <div class="login-link">
+      Sudah punya akun?
+      <a href="../login/mahasiswa.html">Login di sini</a>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="../js/register-mahasiswa.js"></script>
+</body>
+</html>
