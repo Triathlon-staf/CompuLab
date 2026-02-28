@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Scoreboard | COMPULAB</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/scoreboard.css">
+</head>
+<body>
+
+<div class="scoreboard-container">
+
+  <h1>🏆 Leaderboard COMPULAB</h1>
+
+  <!-- TOP 3 -->
+  <div class="top-three">
+
+    <div class="rank-card second">
+      <h2>🥈</h2>
+      <p>Budi</p>
+      <span>950 pts</span>
+    </div>
+
+    <div class="rank-card first">
+      <h2>🥇</h2>
+      <p>Cia</p>
+      <span id="userPoints">0 pts</span>
+    </div>
+
+    <div class="rank-card third">
+      <h2>🥉</h2>
+      <p>Raka</p>
+      <span>870 pts</span>
+    </div>
+
+  </div>
+
+  <!-- RANKING LIST -->
+  <div class="ranking-list">
+
+    <div class="rank-item highlight">
+      <span>#1</span>
+      <span>Cia</span>
+      <span id="userPointsList">0</span>
+    </div>
+
+    <div class="rank-item">
+      <span>#2</span>
+      <span>Budi</span>
+      <span>950</span>
+    </div>
+
+    <div class="rank-item">
+      <span>#3</span>
+      <span>Raka</span>
+      <span>870</span>
+    </div>
+
+    <div class="rank-item">
+      <span>#4</span>
+      <span>Andi</span>
+      <span>720</span>
+    </div>
+
+  </div>
+
+  <div class="actions">
+    <button onclick="goDashboard()">Kembali</button>
+  </div>
+
+</div>
+
+<script src="../js/scoreboard.js"></script>
+</body>
+</html>
