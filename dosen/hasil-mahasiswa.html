@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Hasil Mahasiswa | COMPULAB</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/dashboard-dosen.css">
+<link rel="stylesheet" href="../css/hasil-mahasiswa.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="logo">COMPULAB</div>
+  <nav>
+    <a href="dashboard.html">📊 Dashboard</a>
+    <a href="upload-materi.html">📤 Upload Materi</a>
+    <a href="kelola-materi.html">📚 Kelola Materi</a>
+    <a href="buat-kuis.html">📝 Buat Kuis</a>
+    <a href="kelola-kuis.html">📋 Kelola Kuis</a>
+    <a class="active">📈 Hasil Mahasiswa</a>
+  </nav>
+</div>
+
+<div class="main">
+
+  <div class="topbar">
+    <h1>Hasil Mahasiswa 📈</h1>
+  </div>
+
+  <!-- FILTER -->
+  <div class="filter-bar">
+    <select>
+      <option>Kuis HTML Dasar</option>
+      <option>Kuis JavaScript Advanced</option>
+    </select>
+
+    <button>Filter</button>
+  </div>
+
+  <!-- TABEL HASIL -->
+  <div class="hasil-card">
+
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Nama</th>
+          <th>Nilai</th>
+          <th>Poin</th>
+          <th>Waktu Submit</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="top">
+          <td>🥇</td>
+          <td>Cia</td>
+          <td>95</td>
+          <td>142</td>
+          <td>12:05</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Budi</td>
+          <td>88</td>
+          <td>132</td>
+          <td>12:07</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Raka</td>
+          <td>80</td>
+          <td>120</td>
+          <td>12:10</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+
+</div>
+
+</body>
+</html>
