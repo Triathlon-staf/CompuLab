@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Buat Kuis | COMPULAB</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/dashboard-dosen.css">
+<link rel="stylesheet" href="../css/buat-kuis.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="logo">COMPULAB</div>
+  <nav>
+    <a href="dashboard.html">📊 Dashboard</a>
+    <a href="upload-materi.html">📤 Upload Materi</a>
+    <a href="kelola-materi.html">📚 Kelola Materi</a>
+    <a class="active">📝 Buat Kuis</a>
+    <a href="#">📈 Hasil Mahasiswa</a>
+  </nav>
+</div>
+
+<div class="main">
+
+  <div class="topbar">
+    <h1>Buat Kuis Baru 📝</h1>
+  </div>
+
+  <div class="form-card">
+
+    <div class="form-group">
+      <label>Judul Kuis</label>
+      <input type="text" placeholder="Contoh: Kuis HTML Dasar">
+    </div>
+
+    <div class="row">
+      <div class="form-group">
+        <label>Kategori</label>
+        <select>
+          <option>Web Programming</option>
+          <option>JavaScript</option>
+          <option>Database</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Difficulty</label>
+        <select>
+          <option>Easy</option>
+          <option>Medium</option>
+          <option>Hard</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Durasi (menit)</label>
+        <input type="number" placeholder="15">
+      </div>
+    </div>
+
+    <hr>
+
+    <h3>Daftar Soal</h3>
+
+    <div id="question-container">
+      <!-- Soal akan muncul di sini -->
+    </div>
+
+    <button class="add-question" onclick="addQuestion()">+ Tambah Soal</button>
+
+    <div class="submit-section">
+      <button class="submit-btn">Simpan Kuis</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="../js/buat-kuis.js"></script>
+</body>
+</html>
