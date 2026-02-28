@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Kelola Kuis | COMPULAB</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/dashboard-dosen.css">
+<link rel="stylesheet" href="../css/kelola-kuis.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="logo">COMPULAB</div>
+  <nav>
+    <a href="dashboard.html">📊 Dashboard</a>
+    <a href="upload-materi.html">📤 Upload Materi</a>
+    <a href="kelola-materi.html">📚 Kelola Materi</a>
+    <a href="buat-kuis.html">📝 Buat Kuis</a>
+    <a class="active">📋 Kelola Kuis</a>
+  </nav>
+</div>
+
+<div class="main">
+
+  <div class="topbar">
+    <h1>Kelola Kuis 📝</h1>
+  </div>
+
+  <div class="kuis-table-card">
+
+    <table>
+      <thead>
+        <tr>
+          <th>Judul</th>
+          <th>Difficulty</th>
+          <th>Durasi</th>
+          <th>Status</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td>Kuis HTML Dasar</td>
+          <td><span class="badge easy">Easy</span></td>
+          <td>15 Menit</td>
+          <td>
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider"></span>
+            </label>
+          </td>
+          <td>
+            <button class="edit">Edit</button>
+            <button class="delete">Hapus</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Kuis JavaScript Advanced</td>
+          <td><span class="badge hard">Hard</span></td>
+          <td>25 Menit</td>
+          <td>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </td>
+          <td>
+            <button class="edit">Edit</button>
+            <button class="delete">Hapus</button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+
+</div>
+
+</body>
+</html>
