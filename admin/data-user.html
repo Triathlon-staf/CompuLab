@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Kelola User | COMPULAB</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/dashboard-admin.css">
+<link rel="stylesheet" href="../css/data-user.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="logo">COMPULAB</div>
+  <nav>
+    <a href="dashboard.html">📊 Overview</a>
+    <a class="active">👥 Kelola User</a>
+    <a href="#">📝 Kelola Kuis</a>
+    <a href="#">📚 Kelola Materi</a>
+    <a href="#">⚙ Settings</a>
+  </nav>
+</div>
+
+<div class="main">
+
+  <div class="topbar">
+    <h1>Kelola User 👥</h1>
+    <button class="add-btn" onclick="location.href='tambah-user.html'">
+      + Tambah User
+    </button>
+  </div>
+
+  <!-- FILTER -->
+  <div class="filter-bar">
+    <select>
+      <option>Semua</option>
+      <option>Mahasiswa</option>
+      <option>Dosen</option>
+    </select>
+    <input type="text" placeholder="Cari nama...">
+  </div>
+
+  <!-- TABEL USER -->
+  <div class="user-card">
+    <table>
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Total Poin</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td>Cia</td>
+          <td>cia@mail.com</td>
+          <td><span class="role mahasiswa">Mahasiswa</span></td>
+          <td>1250</td>
+          <td>
+            <button class="edit">Edit</button>
+            <button class="delete">Hapus</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Budi</td>
+          <td>budi@mail.com</td>
+          <td><span class="role dosen">Dosen</span></td>
+          <td>-</td>
+          <td>
+            <button class="edit">Edit</button>
+            <button class="delete">Hapus</button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+</body>
+</html>
