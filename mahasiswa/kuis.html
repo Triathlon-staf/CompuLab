@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Kuis Aktif | COMPULAB</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/dashboard-mahasiswa.css">
+<link rel="stylesheet" href="../css/kuis.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="logo">COMPULAB</div>
+  <nav>
+    <a href="dashboard.html">🏠 Dashboard</a>
+    <a href="materi.html">📚 Materi</a>
+    <a class="active">📝 Kuis</a>
+    <a href="#">🏆 Scoreboard</a>
+    <a href="#">👤 Profil</a>
+  </nav>
+</div>
+
+<div class="main">
+
+  <div class="topbar">
+    <h1>Kuis Aktif 📝</h1>
+  </div>
+
+  <div class="kuis-grid">
+
+    <!-- Kuis Aktif -->
+    <div class="kuis-card active">
+      <div class="kuis-header">
+        <span class="badge easy">Easy</span>
+        <span class="status">Aktif</span>
+      </div>
+      <h3>Kuis HTML Dasar</h3>
+      <p>10 Soal • 15 Menit</p>
+      <p class="deadline">Deadline: 20 Feb 2026</p>
+      <button onclick="location.href='kerjakan-kuis.html'">Mulai</button>
+    </div>
+
+    <!-- Kuis Hard -->
+    <div class="kuis-card hard-card">
+      <div class="kuis-header">
+        <span class="badge hard">Hard</span>
+        <span class="status">Aktif</span>
+      </div>
+      <h3>Kuis JavaScript Advanced</h3>
+      <p>15 Soal • 25 Menit</p>
+      <p class="deadline">Deadline: 22 Feb 2026</p>
+      <button>Mulai</button>
+    </div>
+
+    <!-- Belum Aktif -->
+    <div class="kuis-card disabled">
+      <div class="kuis-header">
+        <span class="badge medium">Medium</span>
+        <span class="status coming">Segera</span>
+      </div>
+      <h3>Kuis React JS</h3>
+      <p>20 Soal • 30 Menit</p>
+      <p class="deadline">Mulai: 25 Feb 2026</p>
+      <button disabled>Belum Tersedia</button>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
