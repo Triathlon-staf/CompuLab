@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Login Mahasiswa</title>
+<title>Login Mahasiswa | COMPULAB</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/login-modern.css">
 </head>
@@ -12,15 +12,26 @@
 
   <div class="login-card">
     <h2>Selamat Datang 🎓</h2>
-    <p>Masuk untuk melanjutkan belajar</p>
+    <p>Masuk untuk melanjutkan belajar di COMPULAB</p>
 
-    <input type="email" placeholder="Email">
-    <input type="password" placeholder="Password">
+    <form onsubmit="loginMahasiswa(event)">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
 
-    <button>Login</button>
+      <button type="submit">Login</button>
+    </form>
+
+    <p class="error-message" id="errorMessage"></p>
+
+    <div class="register-link">
+      Belum punya akun?
+      <a href="../register/mahasiswa.html">Daftar di sini</a>
+    </div>
+
   </div>
 
 </div>
 
+<script src="../js/login-mahasiswa.js"></script>
 </body>
 </html>
