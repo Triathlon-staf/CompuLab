@@ -50,3 +50,21 @@ button{
 button:hover{
   background:#6b99a1;
 }
+
+.error-message{
+  color:#BF4646;
+  font-size:14px;
+  margin-top:10px;
+  min-height:18px;
+}
+
+.register-link{
+  margin-top:15px;
+  font-size:14px;
+}
+
+.register-link a{
+  color:#7EACB5;
+  font-weight:600;
+  text-decoration:none;
+}
