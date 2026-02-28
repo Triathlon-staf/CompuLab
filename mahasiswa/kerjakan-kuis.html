@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Kerjakan Kuis | COMPULAB</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/kuis-run.css">
+</head>
+<body>
+
+<div class="quiz-container">
+
+  <!-- TOP BAR -->
+  <div class="quiz-top">
+    <div class="progress">Soal <span id="current">1</span>/3</div>
+    <div class="timer" id="timer">15:00</div>
+  </div>
+
+  <!-- QUESTION -->
+  <div class="question-box">
+    <h2 id="question-text">
+      Apa fungsi utama HTML?
+    </h2>
+
+    <div class="options">
+      <label><input type="radio" name="option" value="a"> Mengatur style</label>
+      <label><input type="radio" name="option" value="b"> Struktur halaman</label>
+      <label><input type="radio" name="option" value="c"> Membuat animasi</label>
+      <label><input type="radio" name="option" value="d"> Backend logic</label>
+    </div>
+  </div>
+
+  <!-- BUTTON -->
+  <div class="quiz-actions">
+    <button onclick="nextQuestion()">Next</button>
+  </div>
+
+</div>
+
+<script src="../js/kuis.js"></script>
+</body>
+</html>
