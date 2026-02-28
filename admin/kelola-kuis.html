@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Kelola Kuis | Admin - COMPULAB</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/dashboard-admin.css">
+<link rel="stylesheet" href="../css/admin-kelola-kuis.css">
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="logo">COMPULAB</div>
+  <nav>
+    <a href="dashboard.html">📊 Overview</a>
+    <a href="data-user.html">👥 Kelola User</a>
+    <a class="active">📝 Kelola Kuis</a>
+    <a href="kelola-materi.html">📚 Kelola Materi</a>
+    <a href="pengaturan.html">⚙ Pengaturan</a>
+  </nav>
+</div>
+
+<div class="main">
+
+  <div class="topbar">
+    <h1>Kelola Semua Kuis 📝</h1>
+  </div>
+
+  <div class="kuis-table-card">
+
+    <table>
+      <thead>
+        <tr>
+          <th>Judul</th>
+          <th>Pembuat</th>
+          <th>Difficulty</th>
+          <th>Peserta</th>
+          <th>Status</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr>
+          <td>Kuis HTML Dasar</td>
+          <td>Budi (Dosen)</td>
+          <td><span class="badge easy">Easy</span></td>
+          <td>32</td>
+          <td><span class="status active">Aktif</span></td>
+          <td>
+            <button class="view">Detail</button>
+            <button class="delete">Hapus</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Kuis JavaScript Advanced</td>
+          <td>Raka (Dosen)</td>
+          <td><span class="badge hard">Hard</span></td>
+          <td>20</td>
+          <td><span class="status inactive">Nonaktif</span></td>
+          <td>
+            <button class="view">Detail</button>
+            <button class="delete">Hapus</button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+
+</div>
+
+</body>
+</html>
