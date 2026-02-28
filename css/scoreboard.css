@@ -1,0 +1,86 @@
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:linear-gradient(135deg,#FFF4EA,#EDDCC6);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+
+.scoreboard-container{
+  width:800px;
+  text-align:center;
+}
+
+.top-three{
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  gap:20px;
+  margin:40px 0;
+}
+
+.rank-card{
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  width:150px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.rank-card.first{
+  transform:scale(1.1);
+  border:3px solid #7EACB5;
+}
+
+.rank-card.second{
+  border:2px solid #ccc;
+}
+
+.rank-card.third{
+  border:2px solid #ddd;
+}
+
+.rank-card span{
+  font-weight:600;
+  color:#7EACB5;
+}
+
+.ranking-list{
+  background:white;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.1);
+}
+
+.rank-item{
+  display:flex;
+  justify-content:space-between;
+  padding:12px 0;
+  border-bottom:1px solid #eee;
+}
+
+.rank-item:last-child{
+  border-bottom:none;
+}
+
+.highlight{
+  background:#f5fdfd;
+  font-weight:600;
+}
+
+.actions{
+  margin-top:25px;
+}
+
+button{
+  padding:12px 20px;
+  border:none;
+  border-radius:14px;
+  background:#7EACB5;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+}
