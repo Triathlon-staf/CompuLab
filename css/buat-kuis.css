@@ -1,0 +1,68 @@
+.form-card{
+  background:white;
+  padding:35px;
+  border-radius:20px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.05);
+}
+
+.form-group{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:20px;
+}
+
+label{
+  font-size:14px;
+  margin-bottom:8px;
+  font-weight:600;
+}
+
+input, select, textarea{
+  padding:12px;
+  border-radius:12px;
+  border:1px solid #ddd;
+  font-family:'Poppins';
+}
+
+.row{
+  display:flex;
+  gap:20px;
+}
+
+hr{
+  margin:30px 0;
+}
+
+.question-box{
+  background:#f9f9f9;
+  padding:20px;
+  border-radius:15px;
+  margin-bottom:20px;
+}
+
+.question-box input{
+  margin-bottom:10px;
+}
+
+.add-question{
+  background:#7EACB5;
+  color:white;
+  padding:12px 18px;
+  border:none;
+  border-radius:14px;
+  cursor:pointer;
+}
+
+.submit-section{
+  margin-top:30px;
+}
+
+.submit-btn{
+  background:#BF4646;
+  color:white;
+  padding:14px 22px;
+  border:none;
+  border-radius:14px;
+  font-weight:600;
+  cursor:pointer;
+}
