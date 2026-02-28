@@ -1,0 +1,70 @@
+.kuis-table-card{
+  background:#1f1f1f;
+  padding:30px;
+  border-radius:20px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  color:white;
+}
+
+thead{
+  background:#2a2a2a;
+}
+
+th, td{
+  padding:14px;
+  text-align:left;
+}
+
+tr:not(:last-child){
+  border-bottom:1px solid #333;
+}
+
+.badge{
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:12px;
+  color:white;
+}
+
+.easy{ background:#4CAF50; }
+.medium{ background:#FF9800; }
+.hard{ background:#BF4646; }
+
+.status{
+  padding:6px 10px;
+  border-radius:12px;
+  font-size:12px;
+  font-weight:600;
+}
+
+.active{
+  background:#4CAF50;
+}
+
+.inactive{
+  background:#BF4646;
+}
+
+.view{
+  padding:8px 14px;
+  border:none;
+  border-radius:10px;
+  background:#7EACB5;
+  color:white;
+  margin-right:8px;
+  cursor:pointer;
+}
+
+.delete{
+  padding:8px 14px;
+  border:none;
+  border-radius:10px;
+  background:#BF4646;
+  color:white;
+  cursor:pointer;
+}
