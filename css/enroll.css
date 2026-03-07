@@ -1,0 +1,256 @@
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+display:flex;
+background:linear-gradient(180deg,#F6F7F9,#EEF5F6);
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar{
+width:240px;
+height:100vh;
+background:linear-gradient(180deg,#7EACB5,#6b99a1);
+color:white;
+padding:28px 18px;
+position:fixed;
+left:0;
+top:0;
+z-index:1000;
+transition:0.3s;
+}
+
+.logo span{
+font-size:20px;
+font-weight:700;
+display:block;
+}
+
+.logo small{
+font-size:11px;
+opacity:0.7;
+}
+
+nav{
+margin-top:40px;
+}
+
+nav a{
+display:flex;
+align-items:center;
+gap:12px;
+padding:12px 14px;
+border-radius:14px;
+margin-bottom:10px;
+text-decoration:none;
+color:white;
+opacity:0.75;
+transition:0.3s;
+}
+
+nav a:hover{
+opacity:1;
+background:rgba(255,255,255,0.15);
+transform:translateX(4px);
+}
+
+nav a.active{
+opacity:1;
+background:rgba(255,255,255,0.22);
+font-weight:600;
+}
+
+nav .icon{
+width:22px;
+text-align:center;
+}
+
+.nav-divider{
+height:1px;
+background:rgba(255,255,255,0.25);
+margin:18px 0;
+}
+
+nav a.logout:hover{
+background:rgba(255,80,80,0.2);
+}
+
+/* ================= MAIN ================= */
+
+.main{
+margin-left:260px;
+padding:40px;
+flex:1;
+}
+
+/* ================= TOPBAR ================= */
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+}
+
+.topbar h1{
+font-size:20px;
+}
+
+.profile-mini{
+background:#7EACB5;
+width:40px;
+height:40px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+}
+
+/* ================= PROFILE INFO ================= */
+
+.profile-info{
+background:white;
+border-radius:16px;
+padding:20px;
+box-shadow:0 13px 26px rgba(0,0,0,0.05);
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:20px;
+margin-bottom:30px;
+}
+
+.info-item span{
+font-size:12px;
+opacity:0.6;
+}
+
+.info-item strong{
+font-size:14px;
+font-weight:600;
+}
+
+/* ================= CARD ================= */
+
+.card{
+background:rgba(255,255,255,0.8);
+backdrop-filter:blur(20px);
+border-radius:20px;
+padding:20px;
+box-shadow:0 13px 28px rgba(0,0,0,0.05);
+}
+
+/* ================= TABLE ================= */
+
+.krs-table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+.krs-table th{
+text-align:left;
+padding:12px;
+font-size:13px;
+opacity:0.7;
+}
+
+.krs-table td{
+padding:14px 12px;
+border-top:1px solid rgba(0,0,0,0.06);
+}
+
+.krs-badge{
+padding:4px 10px;
+border-radius:999px;
+font-size:12px;
+background:#eee;
+}
+
+.krs-badge.on{
+background:#d7ffe1;
+color:#0b6b2a;
+}
+
+.krs-badge.drop{
+background:#ffe6b3;
+color:#8a5a00;
+}
+
+/* ================= BUTTON ================= */
+
+.btn{
+padding:10px 14px;
+border:none;
+border-radius:12px;
+font-weight:600;
+cursor:pointer;
+}
+
+.btn-primary{
+background:#7EACB5;
+color:white;
+}
+
+.btn-danger{
+background:#ff4d4d;
+color:white;
+}
+
+.btn-disabled{
+background:#ccc;
+color:#666;
+cursor:not-allowed;
+}
+
+/* ================= OVERLAY ================= */
+
+.overlay{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.3);
+opacity:0;
+visibility:hidden;
+transition:0.3s;
+z-index:900;
+}
+
+.overlay.active{
+opacity:1;
+visibility:visible;
+}
+
+/* ================= BURGER ================= */
+
+.menu-toggle{
+display:none;
+font-size:24px;
+cursor:pointer;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+.sidebar{
+left:-260px;
+}
+
+.sidebar.active{
+left:0;
+}
+
+.main{
+margin-left:0;
+padding:20px;
+}
+
+.profile-info{
+grid-template-columns:1fr;
+}
+
+}
